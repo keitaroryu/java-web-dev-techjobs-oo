@@ -33,13 +33,12 @@ public class Job {
     // TDD Add custom toString() method.
     @Override
     public String toString(){
-        String jobInformation = "";
-
+        String jobInformation = "ID: " + id + "\n";
         try {
             if (name.equals("")) {
-                jobInformation += "ID: Data not available\n";
+                jobInformation += "Name: Data not available\n";
             } else {
-                jobInformation += "ID: " + name + "\n";
+                jobInformation += "Name: " + name + "\n";
             }
 
             if (employer.getValue().equals("")) {
@@ -70,7 +69,7 @@ public class Job {
             return "\nOOPS! This job does not seem to exist.\n";
         }
 
-        return "\n" + jobInformation + "\n";
+        return "\n" + jobInformation;
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields

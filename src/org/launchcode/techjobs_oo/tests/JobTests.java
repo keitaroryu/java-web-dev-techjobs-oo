@@ -66,12 +66,12 @@ public class JobTests {
 
     @Test
     public void testJobInformationForToString(){
-        assertEquals("\nID: Red Bull Athlete\nEmployer: Whipper\nLocation: Volcano\nPosition Type: Climber\nCore Competency: Guts\n\n",toStringTestJob1.toString());
+        assertEquals("\nID: 22\nName: Red Bull Athlete\nEmployer: Whipper\nLocation: Volcano\nPosition Type: Climber\nCore Competency: Guts\n",toStringTestJob1.toString());
     }
 
     @Test
     public void testEmptyFieldForToString(){
-        assertEquals("\nID: Red Bull Athlete\nEmployer: Whipper\nLocation: Volcano\nPosition Type: Climber\nCore Competency: Data not available\n\n",toStringTestJob2.toString());
+        assertEquals("\nID: 47\nName: Red Bull Athlete\nEmployer: Whipper\nLocation: Volcano\nPosition Type: Climber\nCore Competency: Data not available\n",toStringTestJob2.toString());
     }
 
     @Test
